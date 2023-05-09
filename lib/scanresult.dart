@@ -19,11 +19,11 @@ class Resultpage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: BackButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
+          onPressed: () =>
+            Navigator.of(context).pop(),
+
         ),
-        // title: Text('My Screen'),
+        title: Text('My Screen'),
       ),
       body: Center(
         child: Text("Bar Code Number:$scanBarcode"),
